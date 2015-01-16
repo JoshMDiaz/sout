@@ -47,9 +47,6 @@
 					</div>
 
 
-					<!-- Header Sidebar Right -->
-					
-
 					<div class="col-md-6 page-header-top-right">
 						<div class="sr-only">
 							<a href="#content" title="<?php esc_attr_e('Skip to content', 'bootstrap-basic'); ?>"><?php _e('Skip to content', 'bootstrap-basic'); ?></a>
