@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Home
+Template Name: Blog
 */
 /* @package bootstrap-basic
 */
@@ -12,9 +12,16 @@ get_header();
 */
 $main_column_size = bootstrapBasicGetMainColumnSize();
 ?>
+
+
+
 <?php get_sidebar('left'); ?>
 <div class="col-md-<?php echo $main_column_size; ?> content-area" id="main-column">
   <main id="main" class="site-main" role="main">
+
+    <h1 class="entry-title">
+      <?php the_title(); ?>
+    </h1>
     <?php
     while (have_posts()) {
       the_post();

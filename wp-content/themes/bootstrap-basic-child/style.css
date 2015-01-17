@@ -7,3 +7,38 @@ Author URI:   http://caitlinherzog.com
 Template:     bootstrap-basic
 Version:      1.0.0
 */
+
+
+/*ALL CSS GOES HERE*/
+
+
+/*Mobile Menu*/
+  form#responsiveSearch {margin: 2.5em 0;}
+  div#responsive-menu input#responsiveSearchInput {border-radius: 5px !important;} /*Remove padding on the sides*/
+
+
+
+/*Container*/
+  div.page-container {max-width: 1500px;}
+  div.container {width: 100%; padding: 0;}
+  #main-column .post, #main-column .page {padding: 0 0 10px 0;}
+
+
+/*Nav*/
+  nav.navbar-default {border-radius: 0;}
+
+
+/*Slider*/
+  div#slider {
+    max-width: 1500px;
+    minheight: 500px;
+    background: red;
+    margin-bottom: 1em;
+    margin: 1em auto;
+  }
+
+
+.testBox{width: 100%;
+  height: 250px;
+  background: blue;
+  margin-bottom: 1em;}
