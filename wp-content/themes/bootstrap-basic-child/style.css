@@ -12,30 +12,53 @@ Version:      1.0.0
 /*ALL CSS GOES HERE*/
 
 
-/*Mobile Menu*/
-  form#responsiveSearch {margin: 2.5em 0;}
-  div#responsive-menu input#responsiveSearchInput {border-radius: 5px !important;} /*Remove padding on the sides*/
-
-
-
-/*Container*/
+/*CONTAINER*/
   div.page-container {max-width: 1500px;}
   div.container {width: 100%; padding: 0;}
   #main-column .post, #main-column .page {padding: 0 0 10px 0;}
 
 
-/*Nav*/
-  nav.navbar-default {border-radius: 0;}
+/*HEADER*/
 
+    /*Site Headline and Logo*/
+    .site-title .site-title-heading {
+      margin: 1em 0 0 0;
+      float: left;
+      font-size: 5em;
+    }
 
-/*Slider*/
-  div#slider {
-    max-width: 1500px;
-    minheight: 500px;
-    background: red;
-    margin-bottom: 1em;
-    margin: 1em auto;
-  }
+    .site-title .site-title-heading a:hover {
+      text-decoration: none;
+    }
+
+    .logo {
+      width: 100%;
+    }
+
+    .logo img {
+      width: 20%;
+      float: left;
+    }
+
+    /*Mobile Menu*/
+    form#responsiveSearch {margin: 2.5em 0;}
+    /*Remove padding on the sides*/
+      div#responsive-menu input#responsiveSearchInput {border-radius: 5px !important;}
+
+    /*Nav*/
+      nav.navbar-default {border-radius: 0;}
+      .navbar-nav {
+        float: right;
+      }
+
+    /*Slider*/
+      div#slider {
+        max-width: 1500px;
+        minheight: 500px;
+        background: red;
+        margin-bottom: 1em;
+        margin: 1em auto;
+      }
 
 
 .testBox{width: 100%;

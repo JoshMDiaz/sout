@@ -7,13 +7,15 @@
 ?>
 
 			</div><!--.site-content-->
-
+			<?php
+			if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Custom Footer Widget Area') ) : ?>
+		<?php endif; ?>
 
 			<footer id="site-footer" role="contentinfo">
 				<div id="footer-row" class="row site-footer">
 					<div class="col-md-6 footer-left">
 						<p>
-							Special Olympics Utah | Created By: Utah Valley University | <a href="http://sout.caitlinherzog.com/wp-admin">Login</a>
+							Special Olympics Utah | Created By: Utah Valley University | <a href="http://sout.caitlinherzog.com/wp-admin" target="_blank">Login</a>
 						</p>
 					</div>
 					<div class="col-md-6 footer-right text-right">
