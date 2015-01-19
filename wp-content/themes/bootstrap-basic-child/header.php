@@ -41,23 +41,21 @@
 
 					<!-- Logo -->
 					<div class="logo">
+						<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
 						<img src="http://sout.caitlinherzog.com/wp-content/uploads/2015/01/logo.png" alt="Special Olymplics Logo" />
-
-
-
 					<h1 class="site-title-heading">
-					<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a>
+					<?php bloginfo('name'); ?></a>
 				</h1>
 
 
 			 </div> <!-- End Logo -->
 
 
-					<div class="site-description">
+					<!-- <div class="site-description">
 						<small>
 							<?php bloginfo('description'); ?>
 						</small>
-					</div>
+					</div> -->
 				</div>
 				<div class="col-md-6 page-header-top-right">
 					<div class="sr-only">
@@ -73,7 +71,7 @@
 				</div><!--.site-branding-->
 
 				<div class="row main-navigation">
-					<div class="col-md-12">
+					<div class="col-md-12 noPadding">
 						<nav class="navbar navbar-default" role="navigation">
 							<div class="navbar-header">
 								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">

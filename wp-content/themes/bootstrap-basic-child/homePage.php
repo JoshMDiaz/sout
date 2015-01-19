@@ -19,6 +19,8 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
   </div>
 
 
+<div class="mainContentContainer">
+
 
 <?php get_sidebar('left'); ?>
 <div class="col-md-<?php echo $main_column_size; ?> content-area" id="main-column">
@@ -42,5 +44,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
     ?>
   </main>
 </div>
+
 <?php get_sidebar('right'); ?>
+</div> <!-- End Main Content Container -->
 <?php get_footer(); ?>
