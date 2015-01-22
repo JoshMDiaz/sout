@@ -12,6 +12,16 @@ Version:      1.0.0
 /*ALL CSS GOES HERE*/
 
 
+/*BODY*/
+  body {
+    font-family: 'Ubuntu Condensed', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+
 /*CONTAINER*/
   div.page-container {max-width: 1500px;}
   div.container {width: 100%; padding: 0;}

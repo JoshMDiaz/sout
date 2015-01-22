@@ -1,0 +1,10 @@
+Special Olympics Color Palette  
+
+  Special Olympics Red
+    #FF0000
+
+  SO Grey
+    #636359
+
+  Biscuit
+    #ECEADB
