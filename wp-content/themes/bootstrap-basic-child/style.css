@@ -12,27 +12,21 @@ Version:      1.0.0
 /*ALL CSS GOES HERE*/
 
 
-/*BODY*/
-  body {
-    font-family: 'Ubuntu Condensed', sans-serif;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Ubuntu', sans-serif;
-  }
-
 
 /*CONTAINER*/
   div.page-container {max-width: 1500px;}
   div.container {width: 100%; padding: 0;}
   #main-column .post, #main-column .page {padding: 0 0 10px 0;}
+  /*Main Content*/
+  .mainContentContainer {
+    padding: 0 1%;
+  }
 
 
 /*HEADER*/
 
     /*Site Headline and Logo*/
     .site-title .site-title-heading {
-      margin: 1em 0 0 0;
       float: left;
       font-size: 5em;
     }
@@ -46,19 +40,45 @@ Version:      1.0.0
     }
 
     .logo img {
-      width: 20%;
+      width: 10%;
       float: left;
     }
+
+      /*Extra Space Under the Logo and Above the Nav*/
+      .row-with-vspace {
+        margin-bottom: 0px;
+      }
 
     /*Mobile Menu*/
     form#responsiveSearch {margin: 2.5em 0;}
     /*Remove padding on the sides*/
       div#responsive-menu input#responsiveSearchInput {border-radius: 5px !important;}
+      #click-menu {
+        border-radius: 0 0 0 15px;
+      }
+
+      div#click-menu-label {
+        margin: 2px 5px 1px;
+      }
 
     /*Nav*/
-      nav.navbar-default {border-radius: 0;}
+      nav.navbar-default {
+        border-radius: 0;
+        background: none;
+        border: 0;
+        box-shadow: none;
+      }
       .navbar-nav {
         float: right;
+      }
+
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+
+      .navbar-collapse {
+        box-shadow: none;
+        padding: 0;
       }
 
     /*Slider*/
@@ -69,6 +89,24 @@ Version:      1.0.0
         margin-bottom: 1em;
         margin: 1em auto;
       }
+
+
+/*FOOTER*/
+  /*Optional Footer Widget*/
+  li#pages-2 {
+    padding: 0 1%;
+  }
+
+
+
+/*MISC*/
+  .noPadding {
+    padding: 0;
+  }
+
+  .row {
+    margin: 0;
+  }
 
 
 .testBox{width: 100%;
