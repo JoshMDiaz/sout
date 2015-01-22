@@ -12,6 +12,15 @@ Version:      1.0.0
 /*ALL CSS GOES HERE*/
 
 
+/*BODY*/
+  body {
+    font-family: 'Ubuntu Condensed', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+  }
+
 
 /*CONTAINER*/
   div.page-container {max-width: 1500px;}
@@ -26,28 +35,23 @@ Version:      1.0.0
 /*HEADER*/
 
     /*Site Headline and Logo*/
-    .site-title .site-title-heading {
-      float: left;
-      font-size: 5em;
+    .site-title, nav.navbar-default {
+      margin: 0;
     }
 
-    .site-title .site-title-heading a:hover {
-      text-decoration: none;
+    .col-md-12.site-title.noPadding {
+      margin-top: -1px;
+      z-index: 999;
     }
 
-    .logo {
+    .col-md-12.site-title.noPadding img {
       width: 100%;
     }
 
-    .logo img {
-      width: 10%;
-      float: left;
+    .responsive-slider.flexslider {
+      margin-top: -265px;
     }
 
-      /*Extra Space Under the Logo and Above the Nav*/
-      .row-with-vspace {
-        margin-bottom: 0px;
-      }
 
     /*Mobile Menu*/
     form#responsiveSearch {margin: 2.5em 0;}
