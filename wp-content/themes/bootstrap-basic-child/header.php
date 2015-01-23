@@ -15,6 +15,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title><?php wp_title('|', true, 'right'); ?></title>
 	<meta name="viewport" content="width=device-width">
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
 
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
@@ -34,41 +35,7 @@
 	<div class="container page-container">
 		<?php do_action('before'); ?>
 		<header role="banner">
-			<div class="row row-with-vspace site-branding">
-				<div class="col-md-12 site-title">
 
-
-
-					<!-- Logo -->
-					<div class="logo">
-						<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
-						<img src="http://sout.caitlinherzog.com/wp-content/uploads/2015/01/logo.png" alt="Special Olymplics Logo" />
-					<h1 class="site-title-heading">
-					<?php bloginfo('name'); ?></a>
-				</h1>
-
-
-			 </div> <!-- End Logo -->
-
-
-					<!-- <div class="site-description">
-						<small>
-							<?php bloginfo('description'); ?>
-						</small>
-					</div> -->
-				</div>
-				<div class="col-md-6 page-header-top-right">
-					<div class="sr-only">
-						<a href="#content" title="<?php esc_attr_e('Skip to content', 'bootstrap-basic'); ?>"><?php _e('Skip to content', 'bootstrap-basic'); ?></a>
-					</div>
-					<?php if (is_active_sidebar('header-right')) { ?>
-						<div class="pull-right">
-							<?php dynamic_sidebar('header-right'); ?>
-						</div>
-						<div class="clearfix"></div>
-						<?php } // endif; ?>
-					</div>
-				</div><!--.site-branding-->
 
 				<div class="row main-navigation">
 					<div class="col-md-12 noPadding">
@@ -89,6 +56,47 @@
 						</nav>
 					</div>
 				</div><!--.main-navigation-->
+
+
+
+
+				<!-- Banner Goes Here -->
+				<div class="row row-with-vspace site-branding">
+					<div class="col-md-12 site-title noPadding">
+
+						<!-- Logo -->
+
+							<!-- <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"></a> -->
+								<img src="http://sout.caitlinherzog.com/wp-content/uploads/2015/01/sout_header.png" alt="Special Olymplics Logo" /></a>
+								<!-- <h1 class="site-title-heading">
+									<?php bloginfo('name'); ?>
+								</h1> -->
+
+
+
+
+
+							<!-- <div class="site-description">
+							<small>
+							<?php bloginfo('description'); ?>
+						</small>
+					</div> -->
+				</div>
+				<div class="col-md-6 page-header-top-right">
+					<div class="sr-only">
+						<a href="#content" title="<?php esc_attr_e('Skip to content', 'bootstrap-basic'); ?>"><?php _e('Skip to content', 'bootstrap-basic'); ?></a>
+					</div>
+					<?php if (is_active_sidebar('header-right')) { ?>
+						<div class="pull-right">
+							<?php dynamic_sidebar('header-right'); ?>
+						</div>
+						<div class="clearfix"></div>
+						<?php } // endif; ?>
+					</div>
+				</div><!--.site-branding-->
+
+
+
 			</header>
 
 

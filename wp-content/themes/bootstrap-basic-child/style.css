@@ -13,8 +13,12 @@ Version:      1.0.0
 
 
 /*BODY*/
-  body{
-    font-family: "Myriad Set Pro","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  body {
+    font-family: 'Ubuntu Condensed', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
   }
 
 
@@ -31,28 +35,19 @@ Version:      1.0.0
 /*HEADER*/
 
     /*Site Headline and Logo*/
-    .site-title .site-title-heading {
-      float: left;
-      font-size: 5em;
+    .site-title, nav.navbar-default {
+      margin: 0;
     }
 
-    .site-title .site-title-heading a:hover {
-      text-decoration: none;
+    .col-md-12.site-title.noPadding {
+      margin-top: -15px;
+      z-index: 999;
     }
 
-    .logo {
+    .col-md-12.site-title.noPadding img {
       width: 100%;
     }
 
-    .logo img {
-      width: 10%;
-      float: left;
-    }
-
-      /*Extra Space Under the Logo and Above the Nav*/
-      .row-with-vspace {
-        margin-bottom: 0px;
-      }
 
     /*Mobile Menu*/
     form#responsiveSearch {margin: 2.5em 0;}
@@ -72,13 +67,19 @@ Version:      1.0.0
         background: none;
         border: 0;
         box-shadow: none;
+        z-index: 9999;
       }
+
       .navbar-nav {
         float: right;
       }
 
-      .dropdown:hover .dropdown-menu {
-        display: block;
+      #mega-menu-wrap-primary-3 #mega-menu-primary-3 > li.mega-menu-flyout ul.mega-sub-menu {
+        width: 190px;
+      }
+
+      #mega-menu-wrap-primary-3 #mega-menu-primary-3 {
+        text-align: center;
       }
 
       .navbar-collapse {
@@ -93,6 +94,10 @@ Version:      1.0.0
         background: red;
         margin-bottom: 1em;
         margin: 1em auto;
+      }
+
+      .responsive-slider.flexslider {
+        margin-top: -6em;
       }
 
 
@@ -118,3 +123,77 @@ Version:      1.0.0
   height: 250px;
   background: blue;
   margin-bottom: 1em;}
+
+
+
+/*MINI TABLET*/
+
+  @media (min-width: 501px) {
+    /*Slider*/
+    .responsive-slider.flexslider {
+      margin-top: -8.5em;
+    }
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+/*TABLET*/
+
+@media (min-width: 701px) {
+    /*Slider*/
+    .responsive-slider.flexslider {
+      margin-top: -10.5em;
+    }
+
+
+
+
+
+
+
+}
+
+
+/*LAPTOP*/
+
+@media (min-width: 900px) {
+  /*Slider*/
+  .responsive-slider.flexslider {
+    margin-top: -12em;
+  }
+
+
+
+
+
+
+
+}
+
+
+
+
+/*DESKTOP*/
+
+@media (min-width: 1030px) {
+  /*Slider*/
+  .responsive-slider.flexslider {
+    margin-top: -17em;
+  }
+
+
+
+
+
+
+
+}
