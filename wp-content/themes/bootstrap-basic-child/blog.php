@@ -2,44 +2,54 @@
 /*
 Template Name: Blog
 */
-/* @package bootstrap-basic
+
+/* This example is for a child theme of Twenty Thirteen:
+*  You'll need to adapt it the HTML structure of your own theme.
 */
 
-get_header();
+get_header(); ?>
 
-/**
-* determine main column size from actived sidebar
-*/
-$main_column_size = bootstrapBasicGetMainColumnSize();
-?>
-
-
-
-<?php get_sidebar('left'); ?>
-<div class="col-md-<?php echo $main_column_size; ?> content-area" id="main-column">
-  <main id="main" class="site-main" role="main">
-
-    <h1 class="entry-title">
-      <?php the_title(); ?>
-    </h1>
+<div id="primary" class="content-area">
+  <div id="content" class="site-content" role="main">
     <?php
-    while (have_posts()) {
-      the_post();
+    /* The loop: the_post retrieves the content
+    * of the new Page you created to list the posts,
+    * e.g., an intro describing the posts shown listed on this Page..
+    */
+    if ( have_posts() ) :
+      while ( have_posts() ) : the_post();
 
-      get_template_part('content', 'page');
+      // Display content of page
+      get_template_part( 'content', get_post_format() );
+      wp_reset_postdata();
 
-      echo "\n\n";
+    endwhile;
+  endif;
 
-      // If comments are open or we have at least one comment, load up the comment template
-      if (comments_open() || '0' != get_comments_number()) {
-        //comments_template();
-      }
+  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-      echo "\n\n";
+  $args = array(
+    // Change these category SLUGS to suit your use.
+    'category_name' => 'music, videos',
+    'paged' => $paged
+  );
 
-    } //endwhile;
-    ?>
-  </main>
-</div>
-<?php get_sidebar('right'); ?>
+  $list_of_posts = new WP_Query( $args );
+  ?>
+  <?php if ( $list_of_posts->have_posts() ) : ?>
+    <?php /* The loop */ ?>
+    <?php while ( $list_of_posts->have_posts() ) : $list_of_posts->the_post(); ?>
+      <?php // Display content of posts ?>
+      <?php get_template_part( 'content', get_post_format() ); ?>
+    <?php endwhile; ?>
+
+    <?php twentythirteen_paging_nav(); ?>
+
+  <?php else : ?>
+    <?php get_template_part( 'content', 'none' ); ?>
+  <?php endif; ?>
+
+</div><!-- #content -->
+</div><!-- #primary -->
+
 <?php get_footer(); ?>
