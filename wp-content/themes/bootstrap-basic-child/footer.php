@@ -7,6 +7,8 @@
 ?>
 
 			</div><!--.site-content-->
+
+			<!-- Custom Footer Widget -->
 			<?php
 			if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Custom Footer Widget Area') ) : ?>
 		<?php endif; ?>

@@ -12,10 +12,18 @@ get_header();
  */
 $main_column_size = bootstrapBasicGetMainColumnSize();
 ?>
+
+
+<!-- Custom Banner Widget -->
+<?php
+if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Custom Banner Widget Area') ) : ?>
+<?php endif; ?>
+
+
 <?php get_sidebar('left'); ?>
 				<div class="col-md-<?php echo $main_column_size; ?> content-area" id="main-column">
 					<main id="main" class="site-main" role="main">
-						<?php 
+						<?php
 						while (have_posts()) {
 							the_post();
 

@@ -60,27 +60,12 @@
 
 
 
-				<!-- Banner Goes Here -->
+
 				<div class="row row-with-vspace site-branding">
 					<div class="col-md-12 site-title noPadding">
-
-						<!-- Logo -->
-
-							<!-- <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"></a> -->
+						<!-- SOUT Banner Goes Here -->
 								<img src="http://sout.caitlinherzog.com/wp-content/uploads/2015/01/sout_header.png" alt="Special Olymplics Logo" /></a>
-								<!-- <h1 class="site-title-heading">
-									<?php bloginfo('name'); ?>
-								</h1> -->
 
-
-
-
-
-							<!-- <div class="site-description">
-							<small>
-							<?php bloginfo('description'); ?>
-						</small>
-					</div> -->
 				</div>
 				<div class="col-md-6 page-header-top-right">
 					<div class="sr-only">

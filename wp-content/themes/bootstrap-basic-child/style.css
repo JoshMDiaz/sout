@@ -44,7 +44,6 @@ Version:      1.0.0
     }
 
     .col-md-12.site-title.noPadding {
-      margin-top: -15px;
       z-index: 999;
     }
 
@@ -53,12 +52,35 @@ Version:      1.0.0
     }
 
 
+    /*Rotating Banner*/
+    div.random_banner_css img {
+      max-width: 100%;
+    }
+
+    div.random_banner_css {
+      margin-bottom: 2em;
+    }
+
+    h3.widget-title {
+      display: none;
+    }
+
+
     /*Mobile Menu*/
     form#responsiveSearch {margin: 2.5em 0;}
     /*Remove padding on the sides*/
-      div#responsive-menu input#responsiveSearchInput {border-radius: 5px !important;}
+      div#responsive-menu input#responsiveSearchInput {
+        border-radius: 5px !important;
+        }
+
       #click-menu {
         border-radius: 0 0 0 15px;
+        border: 2px solid white;
+        border-top: none;
+      }
+
+      div#responsive-menu #responsiveSearch {
+        width: 100% !important;
       }
 
       div#click-menu-label {
@@ -74,8 +96,8 @@ Version:      1.0.0
         z-index: 9999;
       }
 
-      .navbar-nav {
-        float: right;
+      .row.main-navigation {
+        height: 35px;
       }
 
       #mega-menu-wrap-primary-3 #mega-menu-primary-3 > li.mega-menu-flyout ul.mega-sub-menu {
@@ -100,16 +122,22 @@ Version:      1.0.0
         margin: 1em auto;
       }
 
-      .responsive-slider.flexslider {
-        margin-top: -6em;
+      .row.row-with-vspace.site-branding {
+        position: absolute;
+        max-width: 1500px;
       }
 
 
 /*FOOTER*/
   /*Optional Footer Widget*/
-  li#pages-2 {
-    padding: 0 1%;
-  }
+  /*ul#menu-mainmenu, ul#menu-mainmenu ul, li#nav_menu-2 {
+    list-style: none;
+    font-size: 20px;
+    display: none;
+  }*/
+
+
+
 
 
 
@@ -135,29 +163,9 @@ Version:      1.0.0
 
 .testBox{width: 100%;
   height: 250px;
-  background: blue;
+  background: #eee;
   margin-bottom: 1em;}
 
-
-
-
-
-
-/*MINI TABLET*/
-
-  @media (min-width: 501px) {
-    /*Slider*/
-    .responsive-slider.flexslider {
-      margin-top: -8.5em;
-    }
-
-
-
-
-
-
-
-  }
 
 
 
@@ -166,12 +174,9 @@ Version:      1.0.0
 /*TABLET*/
 
 @media (min-width: 701px) {
-    /*Slider*/
-    .responsive-slider.flexslider {
-      margin-top: -10.5em;
-    }
-
-
+    /*ul#menu-mainmenu, ul#menu-mainmenu ul, li#nav_menu-2 {
+      display: block;
+    }*/
 
 
 
@@ -183,44 +188,19 @@ Version:      1.0.0
 /*LAPTOP*/
 
 @media (min-width: 900px) {
-  /*Slider*/
-  .responsive-slider.flexslider {
-    margin-top: -12em;
-  }
-
-
-
 
 
 
 
 }
 
-
-
-
-/*DESKTOP*/
-
-@media (min-width: 1030px) {
-  /*Slider*/
-  .responsive-slider.flexslider {
-    margin-top: -17em;
-  }
-
-
-
-
-
-
-
-}
 
 
 
 
 /*LARGE DESKTOP*/
 
-@media (min-width: 1501px) {
+@media (min-width: 1201px) {
   /*Container*/
   .mainContentContainer {
     padding: 0;

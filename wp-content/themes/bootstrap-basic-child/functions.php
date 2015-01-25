@@ -8,7 +8,7 @@ function theme_enqueue_styles() {
 }
 
 
-// Custom widget area.
+// Custom footer widget area.
 register_sidebar( array(
   'name' => __( 'Custom Footer Widget Area'),
   'id' => 'custom-widget-area',
@@ -18,3 +18,16 @@ register_sidebar( array(
   'before_title' => '<h3 class="widget-title">',
   'after_title' => '</h3>',
   ) );
+
+
+
+  // Custom banner widget area.
+  register_sidebar( array(
+    'name' => __( 'Custom Banner Widget Area'),
+    'id' => 'custom-banner-widget-area',
+    'description' => __( 'An optional custom banner widget area', 'bootstrap-basic' ),
+    'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+    'after_widget' => "</li>",
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+    ) );
