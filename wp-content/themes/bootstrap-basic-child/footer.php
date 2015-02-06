@@ -27,7 +27,8 @@
 			</footer>
 		</div><!--.container page-container-->
 
-
+		<script type="text/javascript" src="js/toucheffects.js"></script>
+		<script type="text/javascript" src="js/modernizr.custom.js"></script>
 		<!--wordpress footer-->
 		<?php wp_footer(); ?>
 	</body>

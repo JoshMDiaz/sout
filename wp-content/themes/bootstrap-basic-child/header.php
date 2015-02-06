@@ -64,7 +64,7 @@
 				<div class="row row-with-vspace site-branding">
 					<div class="col-md-12 site-title noPadding">
 						<!-- SOUT Banner Goes Here -->
-								<img src="http://sout.caitlinherzog.com/wp-content/uploads/2015/01/sout_header.png" alt="Special Olymplics Logo" /></a>
+								<img src="http://sout.caitlinherzog.com/wp-content/uploads/2015/02/sout_header.png" alt="Special Olymplics Logo" /></a>
 
 				</div>
 				<div class="col-md-6 page-header-top-right">
